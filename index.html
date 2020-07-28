@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Webhook Messager</title>
+  </head>
+  <body>
+  	URL: <input type="text" id="IText" value="">
+  	CONTENT: <input type="text" id="CText" value="">
+    <button onclick="sendMessage()">Send</button>
+  </body>
+
+  <script>
+    function sendMessage() {
+      var hookURL = document.getElementById("IText").value
+      var request = new XMLHttpRequest();
+      request.open("POST", hookURL);
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      var params = {
+        content: document.getElementById("CText").value
+      }
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
+</html>

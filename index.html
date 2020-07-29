@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=800, initial-scale=1.0">
     <title>Discord Webhook Messager</title>
+    <font color="#a5a5a5">
     
     <style>
       body {
@@ -12,21 +13,27 @@
       button {
         padding: 75px 110px;
       }
-      IText {
-        padding: 75px 110px;
+      @font-face { 
+      	font-family:Thing; 
+      	src:url(Roboto-Regular.ttf); 
       }
-      CText {
-        padding: 75px 110px;
+      text {
+        font-family: Thing;
+        font-size: 256px;
       }
     </style>
     
   </head>
   <body>
-      "URL: "<input type="text" id="IText" value="">
-    
-  	  "CONTENT: "<input type="text" id="CText" value="">
-      
-      <button color="#ff2e35" onclick="sendMessage()">Send</button>
+  			<p style=font-family:Thing;font-size=128px;>
+		      URL:
+		      <input style = "width:500px;" type="text" id="IText" value=""> 
+
+		  	  <p style = "position:relative; top:-32; font-family: Thing; font-size: 32px">CONTENT:</p>
+		  	  <input style = "background-color: #1a1a1a; color:white; padding-bottom:100;font-size:32px;position:relative; top: -132; width:1000px" type="text" id="CText" value="">
+
+		  	  <button style = "background-color:#ff2e35;color:white;font-size:32px;font-family:Thing;position:relative;top:128px; left:-768px;" type = "button" onclick="sendMessage()">Send</button>
+		  	</p>
   </body>
 
   <script>

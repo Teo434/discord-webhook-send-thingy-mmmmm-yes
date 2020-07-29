@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord Webhook Messager</title>
+    
+    <style>
+      body {
+        background-image: url('back.png');
+      }
+      .button {
+        padding: 75px 110px;
+      }
+      .IText {
+        padding: 75px 110px;
+      }
+      .CText {
+        padding: 75px 110px;
+      }
+    </style>
+    
   </head>
   <body>
-  	URL: <input type="text" id="IText" value="">
-  	CONTENT: <input type="text" id="CText" value="">
-    <button onclick="sendMessage()">Send</button>
+      \nURL: <input type="text" id="IText" value="">
+    
+  	  \nCONTENT: <input type="text" id="CText" value="">
+      
+      <button color="#ff2e35" onclick="sendMessage()">Send</button>
   </body>
 
   <script>
